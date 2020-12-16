@@ -1,0 +1,83 @@
+.main-first-block {
+    h2 {
+        // font-family: 'Bebas Neue', sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 43.2px;
+        color: #0B4275;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .block-container {
+        .flex();
+        max-width: 906px;
+        margin: 0 auto;
+        justify-content: space-between;
+        position: relative;
+        @media screen and (max-width: 750px) {
+            justify-content: space-around;
+        }
+        .block-item {
+            max-width: 345px;
+            width: 100%;
+            height: 255px;
+            background-color: #003665;
+            margin-bottom: 16px;
+            &:nth-child(even) {
+                text-align: right;
+                .block-item__title {
+                    padding-right: 37px;
+                }
+                img {
+                    margin-right: 75px;
+                }
+            }
+            &:nth-child(odd) {
+                text-align: left;
+                .block-item__title {
+                    padding-left: 37px;
+                }
+                img {
+                    margin-left: 75px;
+                }
+            }
+            &__title {
+                font-size: 24px;
+                line-height: 35px;
+                color: #FFB800;
+                padding-top: 20px;
+            }
+            img {
+                display: inline-block;
+                margin-top: 48px;
+                max-width: 100px;
+            }
+        }
+        .block-item-absolute {
+            width: 100%;
+            height: 438px;
+            background: rgba(255, 255, 255, 0.87);
+            order: -1;
+            @media screen and (min-width: 900px) {
+                width: 349px;
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%, -50%);
+            }
+            &__title {
+                font-size: 24px;
+                line-height: 35px;
+                align-items: center;
+                text-align: center;
+                color: #0B4275;
+                padding: 52px 35px 0;
+            }
+            img {
+                display: block;
+                max-width: 100%;
+                margin: 48px auto 0;
+            }
+        }
+    }
+}
