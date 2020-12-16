@@ -1,0 +1,57 @@
+@font-face {
+	font-family: 'Circe';
+	src: url('./fonts/Circe-Regular.eot');
+	src: local('☺'), url('./fonts/Circe-Regular.woff') format('woff'), url('./fonts/Circe-Regular.ttf') format('truetype'), url('./fonts/Circe-Regular.svg') format('svg');
+    font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Circe';
+	src: url('./fonts/Circe-Bold.eot');
+	src: local('☺'), url('./fonts/Circe-Bold.woff') format('woff'), url('./fonts/Circe-Bold.ttf') format('truetype'), url('./fonts/Circe-Bold.svg') format('svg');
+    font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url('./fonts/BebasNeueRegular.eot');
+	src: local('☺'), url('./fonts/BebasNeueRegular.woff') format('woff'), url('./fonts/BebasNeueRegular.ttf') format('truetype'), url('./fonts/BebasNeueRegular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+/************** Variables *******************/
+@wrapper_width: 1126px;
+@wrapper_padding: 10px;
+/************* <functions> *******************/
+.flex(){
+    display: flex;
+    flex-wrap: wrap;
+}
+// Задаем параметры центрирующего блока
+.wrapper(){
+    max-width: @wrapper_width;
+    margin: auto;
+    padding-left: @wrapper_padding;
+    padding-right: @wrapper_padding;
+}
+// Задаем параметры ширины элемента в зависимости от размера экрана
+.width(@width:10000px, @number_columns:12, @element_columns:3, @margin:20px){
+    @media screen and (max-width: @width) {
+        .element_width(@n, @el, @m){
+            width: calc(100% / @n * @el - @m);
+        }
+        .element_width(@number_columns, @element_columns, @margin);
+    }
+}
+// Задаем размер шрифта в зависимости от размера экрана
+.font-size(@width, @size){
+    @media screen and (max-width: @width) {
+        font-size: @size;
+    }
+}
+// Задаем параметры отрицательных отступов у флекс контейнера для прижатия элементов к краям, поскольку у  wrapper задан padding. Отступ задается размером отступа с одной стороны у дочернего элемента.
+.margin(@margin){
+    margin-left: @margin;
+    margin-right: @margin;
+}
+/************* </functions> *******************/
