@@ -1,0 +1,56 @@
+.main-fourth-block {
+    min-height: 552px;
+    background-color: #003665;
+    background-image: url(./img/star-sky.svg);
+    background-repeat: repeat-y;
+    .container {
+        display: flex;
+        padding-top: 65px;
+        @media screen and (max-width: 1000px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 30px;
+        }
+        img {
+            max-width: 539px;
+            width: 100%;
+            flex-shrink: 0;
+            align-self: start;
+            @media screen and (max-width: 1000px) {
+                flex-shrink: initial;
+            }
+        }
+        .text {
+            padding-left: 25px;
+            @media screen and (max-width: 1000px) {
+                padding-top: 20px;
+                h2.title {
+                    text-align: center;
+                    font-size: 40px;
+                    line-height: 45px;
+                }
+            }
+            h2.title {
+                font-size: 64px;
+                line-height: 64px;
+                margin-top: 0;                
+                color: #FFB800;
+                margin-bottom: 10px;
+            }
+            .desc {
+                font-size: 24px;
+                line-height: 31px;                    
+                color: #B4E0D3;
+                padding-left: 3px;
+                @media screen and (max-width: 1000px) {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+                p {
+                    margin-top: 0;
+                    margin-bottom: 31px;
+                }
+            }
+        }
+    }
+}
