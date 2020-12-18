@@ -1,8 +1,14 @@
 .main-third-block {
     margin-top: 40px;
     margin-bottom: 81px;
+    @media screen and (max-width: 500px) {
+        margin-bottom: 50px;
+    }
     .block-container {
         margin-bottom: 26px;
+        @media screen and (max-width: 500px) {
+            margin-bottom: 0;
+        }
         .flex();
         .margin(-15px);
         .block-item {
@@ -22,6 +28,10 @@
                 text-align: center;
                 color: #000000;
                 padding: 22px 23px 31px;
+                @media screen and (max-width: 500px) {
+                    font-size: 18px;
+                    line-height: 25px;
+                }
             }
             &.last-row {
                 margin-top: -50px;
@@ -37,5 +47,25 @@
             }
         }
 
+    }
+    &.else-block {
+        margin-top: 82px;
+        margin-bottom: 111px;
+        .block-container .block-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__title {
+                font-size: 32px;
+                line-height: 36px;
+                color: #0B4275;
+                padding: 0 0 23px;
+                margin-top: 43px;
+                @media screen and (max-width: 500px) {
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+            }
+        }
     }
 }

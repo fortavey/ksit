@@ -1,8 +1,10 @@
 .main-fourth-block {
     min-height: 552px;
     background-color: #003665;
-    background-image: url(./img/star-sky.svg);
     background-repeat: repeat-y;
+    &.lazyBg {
+        background-image: url(./img/star-sky.svg);
+    }
     .container {
         display: flex;
         padding-top: 65px;
@@ -30,12 +32,16 @@
                     line-height: 45px;
                 }
             }
+            @media screen and (max-width: 500px) {
+                padding-left: 0;
+            }
             h2.title {
                 font-size: 64px;
                 line-height: 64px;
                 margin-top: 0;                
                 color: #FFB800;
                 margin-bottom: 10px;
+                font-weight: 400;
             }
             .desc {
                 font-size: 24px;

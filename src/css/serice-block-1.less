@@ -1,0 +1,31 @@
+.service-block-1 {
+    margin-top: 42px;
+    margin-bottom: 75px;
+    .container {
+        .flex();
+        margin-bottom: 36px;
+        .item {
+            .width(12000px, 12, 4, 0px);
+            .width(900px, 12, 6, 0px);
+            .width(500px, 1, 1, 0px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 35px;
+            img {
+                display: block;
+                margin: 0 auto 22px;
+            }
+            .text {
+                text-align: center;
+                font-size: 32px;
+                line-height: 36px;
+                color: #0B4275;
+                @media screen and (max-width: 600px) {
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}

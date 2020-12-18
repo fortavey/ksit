@@ -34,6 +34,19 @@ try{
                 }
             ]
         });
+        $(document).ready(function() {
+            $('.certificates .container').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                tLoading: 'Loading image #%curr%...',
+                mainClass: 'mfp-img-mobile',
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                }
+            });
+        });
     });
 }catch(err){console.log(err)}
 
@@ -49,3 +62,49 @@ try{
         });
    })();
 }catch(err){console.log(err)}
+
+// Lazy Background
+try{
+    (function(){
+        const arr = [
+            '.feedback',
+            '.main-fourth-block',
+            'footer.site-footer',
+            '.certificates',
+        ];
+        const newArr = arr.filter(el => document.querySelectorAll(el).length);
+
+        function addClass(){
+            if(window.scrollY > 100) {
+                newArr.forEach(el => {
+                    document.querySelector(el).classList.add('lazyBg');
+                });
+                window.removeEventListener('scroll', addClass);
+            }
+        }
+        window.addEventListener('scroll', addClass);
+    })();
+}catch(err){console.log(err);}
+
+// Lazy Image
+try{
+    (function(){
+        const arr = [...document.querySelectorAll('.f-lazy-image')];
+
+        function addSrc(){
+            if(window.scrollY > 100) {
+                arr.forEach(el => {
+                    el.setAttribute('src', el.dataset.src);
+                });
+                window.removeEventListener('scroll', addClass);
+            }
+        }
+
+        arr.forEach(el => {
+            const img = new Image();
+            img.src = el.dataset.src;
+        });
+
+        window.addEventListener('scroll', addSrc);
+    })();
+}catch(err){console.log(err);}

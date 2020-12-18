@@ -1,0 +1,77 @@
+.about-first-block {
+    margin-bottom: 129px;
+    @media screen and (max-width: 600px) {
+        margin-bottom: 50px;
+    }
+    h2 {
+        font-size: 64px;
+        line-height: 77px;        
+        text-align: center;
+        color: #0B4275;
+        margin-top: 42px;
+        margin-bottom: 43px;
+        font-weight: 400;
+        @media screen and (max-width: 600px) {
+            font-size: 40px;
+            line-height: 50px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    .center-block {
+        max-width: 912px;
+        min-height: 435px;        
+        background: #FFB800;
+        margin: 0 auto 0;
+        font-size: 50px;
+        line-height: 74px;
+        text-align: center;
+        color: #0B4275;
+        padding: 46px 70px 230px;
+        margin-bottom: -212px;
+        @media screen and (max-width: 600px) {
+            min-height: 250px;
+            font-size: 30px;
+            line-height: 35px;
+            padding: 46px 70px 100px;
+            margin-bottom: -120px;
+        }
+    }
+    .container {
+        .flex();
+        .margin(-14.5px);
+        @media screen and (max-width: 800px) {
+            .margin(0);
+        }
+        .item {
+            .width(12000px, 2, 1, 29px);
+            .width(800px, 1, 1, 29px);
+            background-color: #E7EDF2;
+            .margin(14.5px);
+            margin-bottom: 40px;
+            padding: 44px 26px 0;
+            @media screen and (max-width: 600px) {
+                padding: 20px;
+                margin-bottom: 10px;
+            }
+            .text {
+                font-size: 32px;
+                line-height: 45px;                
+                color: #0B4275;
+                @media screen and (max-width: 600px) {
+                    font-size: 22px;
+                    line-height: 25px;
+                }
+            }
+            img {
+                display: block;
+            }
+            &:nth-child(odd) {
+                text-align: right;
+                img {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
