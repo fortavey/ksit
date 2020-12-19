@@ -53,13 +53,31 @@ try{
 // Open review
 try{
    (function(){
-       const btn = document.querySelector('.reviews .container');
-        btn.addEventListener('click', e => {
-            console.log(e.target);
-            if(e.target.classList.contains('open') || e.target.classList.contains('arrow')) {
-                e.target.closest('.text').classList.toggle('opened');
-            }
-        });
+       const btns = [document.querySelector('.reviews .container'), document.querySelector('.faq .container')];
+       btns.forEach(btn => {
+           if(btn) {
+               btn.addEventListener('click', e => {
+                   if(e.target.classList.contains('open') || e.target.classList.contains('arrow')) {
+                       e.target.closest('.text').classList.toggle('opened');
+                   }
+               });
+           }
+       });
+   })();
+}catch(err){console.log(err)}
+
+// Add same height on faq
+try{
+   (function(){
+       if(window.innerWidth > 600) {
+           const allTitle = [...document.querySelectorAll('.faq .container .title')];
+           let maxHeight = 0;
+    
+           allTitle.forEach(el => {
+                maxHeight = el.clientHeight > maxHeight ? el.clientHeight : maxHeight;
+           });
+           allTitle.forEach(el => el.style.height = maxHeight + 'px');
+       }
    })();
 }catch(err){console.log(err)}
 
@@ -96,7 +114,7 @@ try{
                 arr.forEach(el => {
                     el.setAttribute('src', el.dataset.src);
                 });
-                window.removeEventListener('scroll', addClass);
+                window.removeEventListener('scroll', addSrc);
             }
         }
 
