@@ -1,0 +1,66 @@
+.white-popup {
+    position: relative;
+    background: transparent;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+}
+#popup-form {
+    max-width: 1357px;
+    height: 579px;
+    background-image: url(./img/form-popup.png);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 57px;
+    padding-right: 73px;
+    padding-left: 73px;
+    @media screen and (max-width: 600px) {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: auto;
+    }
+    .wpcf7 {
+        max-width: 607px;
+        input {
+            height: 57px;
+            width: 100%;
+            border: none;
+            border-radius: 2px;
+            outline: none;
+            padding: 0;
+            margin: 0 0 43px;
+            @media screen and (max-width: 600px) {
+                margin: 0 0 20px;
+            }
+            &[type=submit] {
+                background: #FFB800;
+                cursor: pointer;
+            }
+            &:not([type="submit"]) {
+                padding-left: 15px;
+            }
+            &::placeholder {
+                font-size: 24px;
+                line-height: 31px;
+                color: #6C90B1;
+                font-weight: 300;            
+            }
+        }
+        textarea {
+            height: 149px;
+            margin-bottom: 28px;
+            color: #0B4275;
+            font-size: 24px;
+            @media screen and (max-width: 600px) {
+                margin-bottom: 20px;
+            }
+        }
+        label {
+            font-size: 28px;
+            line-height: 31px;
+            color: #FFFFFF;
+        }
+    }
+}

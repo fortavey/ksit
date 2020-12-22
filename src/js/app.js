@@ -7,6 +7,7 @@ try{
         btn.addEventListener('click', e => {
             btn.classList.toggle('open');
             header.classList.toggle('menu-opened');
+            document.body.classList.toggle('menu-opened');
         });
     })();
 }catch(err){console.log(err);}
@@ -34,6 +35,18 @@ try{
                 }
             ]
         });
+        $('.consultation-button').magnificPopup({
+            items: {
+                src: '#popup-form',
+                type: 'inline'
+            }
+          });
+        $('.header-slider__button').magnificPopup({
+            items: {
+                src: '#popup-form',
+                type: 'inline'
+            }
+          });
         $(document).ready(function() {
             $('.certificates .container').magnificPopup({
                 delegate: 'a',
@@ -59,6 +72,7 @@ try{
                btn.addEventListener('click', e => {
                    if(e.target.classList.contains('open') || e.target.classList.contains('arrow')) {
                        e.target.closest('.text').classList.toggle('opened');
+                       ( e.target.closest('.opened') ) ? e.target.closest('.text').querySelector('.read-more-btn').textContent = 'Скрыть полный отзыв' : e.target.closest('.text').querySelector('.read-more-btn').textContent = 'Читать полный отзыв';
                    }
                });
            }

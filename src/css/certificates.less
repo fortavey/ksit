@@ -15,26 +15,39 @@
         margin-top: 0;
         margin-bottom: 24px;
         font-weight: 400;
+        @media screen and (max-width: 500px) {
+            font-size: 40px;
+            line-height: 45px;
+        }
     }
     .container {
-        display: flex;
+        .flex();
+        justify-content: center;
         .margin(-15px);
     }
     .item {
         .width(12000px, 12, 4, 30px);
+        .width(800px, 12, 6, 30px);
+        .width(600px, 12, 12, 30px);
         .margin(15px);
+        margin-bottom: 30px;
         a {
 
         }
         img {
-
+            display: block;
+            margin: auto;
         }
         .title {
             font-size: 36px;
             line-height: 36px;
             text-align: center;
             color: #FFB800;
-            margin-top: 33px;       
+            margin-top: 33px; 
+            @media screen and (max-width: 600px) {
+                font-size: 24px;
+                line-height: 30px;
+            }      
         }
     }
 }

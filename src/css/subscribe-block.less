@@ -1,0 +1,104 @@
+.subscribe-block {
+    color: #FFB800;
+    background-color: #003766;
+    background-repeat: repeat-y, repeat-y;
+    background-position: left, right;
+    padding-bottom: 34px;
+    padding-top: 50px;
+    text-align: center;
+    &.lazyBg {
+        background-image: url(./img/star-sky-white.svg), url(./img/scheme.svg);
+        @media screen and (max-width: 800px) {
+            background-image: none;
+        }
+    }
+    .title {
+        font-size: 48px;
+        line-height: 71px;
+        @media screen and (max-width: 800px) {
+            font-size: 35px;
+            line-height: 35px;
+        }
+    }
+    .desc {
+        font-size: 36px;
+        line-height: 53px;
+        @media screen and (max-width: 800px) {
+            font-size: 25px;
+            line-height: 30px;
+        }
+    }
+    .subscribe-adv {
+        font-size: 36px;
+        line-height: 53px;
+        padding-left: 196px;
+        margin-top: 30px;
+        @media screen and (max-width: 800px) {
+            font-size: 20px;
+            line-height: 25px;
+            padding-left: 30px;
+        }
+        .item {
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+            text-align: left;
+            &::before {
+                content: '';
+                display: block;
+                width: 17px;
+                height: 17px;
+                border: 5px solid #FFB800;
+                border-top: none;
+                border-left: none;
+                transform: rotate(45deg);
+                position: relative;
+                top: 13px;
+                margin-right: 20px;
+                @media screen and (max-width: 800px) {
+                    width: 10px;
+                    height: 10px;
+                    border: 3px solid #FFB800;
+                    border-top: none;
+                    border-left: none;
+                    top: 3px;
+                }
+            }
+        }
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 42px;
+        img {
+            margin-left: 67px;
+            align-self: flex-start;
+            margin-top: 3px;
+            @media screen and (max-width: 800px) {
+                display: none;
+            }
+        }
+        .subscribe-form {
+            flex-grow: 1;
+            .item {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin-bottom: 20px;
+                text-align: left;
+                span {
+                    font-size: 24px;
+                    line-height: 24px;
+                    flex-shrink: 0;
+                    min-width: 75px;
+                }
+                input {
+                    width: 100%;
+                    max-width: 634px;
+                    height: 57px;
+                    margin-left: 18px;
+                }
+            }
+        }
+    }
+}

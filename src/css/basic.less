@@ -9,7 +9,7 @@ body {
         font-size: 20px;
         line-height: 20px;
     }
-    .menu-opened {
+    &.menu-opened {
         overflow: hidden;
     }
 }
@@ -81,9 +81,16 @@ input, textarea {
     text-align: center;
     color: #0B4275;
     .margin(auto);
+    clear: both;
     @media screen and (max-width: 600px) {
         font-size: 23px;
         line-height: 25px;
+    }
+}
+.interval {
+    clear: both;
+    @media screen and (max-width: 600px) {
+        height: 35px !important;
     }
 }
 .arrows {
@@ -116,12 +123,61 @@ input, textarea {
     }
 }
 main.site-main {
+    .alignleft, .alignright {
+        @media screen and (max-width: 600px) {
+            float: none;
+            img {
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+    .wp-block-image,
+    p,
+    ul,
+    ol,
+    h2,h3,h4,h5,h6 {
+        max-width: 1126px;
+        .margin(auto);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    h2,h3,h4,h5,h6 {
+        font-weight: normal;
+    }
+    h2 {
+        font-weight: normal;
+        font-size: 64px;
+        line-height: 64px;
+        color: #0B4275;
+        @media screen and (max-width: 600px) {
+            font-size: 40px;
+            line-height: 45px;
+        }
+    }
+    h3 {
+        @media screen and (max-width: 600px) {
+            font-size: 25px !important;
+            line-height: 30px;
+        }
+    }
+    p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 36px;
+        line-height: 64px;
+        color: #0B4275;
+        @media screen and (max-width: 600px) {
+            font-size: 18px !important;
+            line-height: 22px;
+        }
+    }
     ul {
         margin: 0;
-        padding: 0;
         list-style: none;
         font-size: 36px;
         line-height: 53px;
+        .margin(auto);
         @media screen and (max-width: 900px) {
             font-size: 25px;
             line-height: 30px;
@@ -136,6 +192,10 @@ main.site-main {
             align-items: flex-start;
             position: relative;
             margin-bottom: 13px;
+            @media screen and (max-width: 600px) {
+                font-size: 18px !important;
+                line-height: 22px;
+            }
             @media screen and (max-width: 500px) {
                 margin-bottom: 5px;
             }

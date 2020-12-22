@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Grid</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <script type='text/javascript' src='./js/jquery/jquery.js'></script>
+    <script type='text/javascript' src='./js/jquery/jquery-migrate.min.js'></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="top-line">
+            <div class="wrapper">
+                <div class="top-line__container">
+                    <div class="logo">
+                        <a href="/"><img src="./img/logo.svg" alt="logo"></a>
+                        <a href="/"><span>IT-аутсорсинг</span></a>
+                    </div>
+                    <div class="menu-and-contacts">
+                        <nav>
+                            <ul>
+                                <li class="menu-item-has-children">
+                                    <a href="about.html">О нас</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="reviews.html">Отзывы</a></li>
+                                        <li><a href="contacts.html">Контакты</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Услуги</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="service1.html">Построение и настройка IT-инфраструктуры</a></li>
+                                        <li><a href="service2.html">Абонентское обслуживание</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="ready-solutions.html">Готовые решения</a></li>
+                                <li><a href="blog.html">Блог</a></li>
+                            </ul>
+                        </nav>
+                        <div class="top-contacts">
+                            <div class="top-contacts__info">
+                                <div class="phone"><span>+7(499)</span> 674-72-45</div>
+                                <div class="email">info@specialist.ru</div>
+                            </div>
+                            <div class="social">
+                                <a href="" target="_blank"><img src="./img/wa.svg" alt="icon"></a>
+                                <a href="" target="_blank"><img src="./img/in.svg" alt="icon"></a>
+                                <a href="" target="_blank"><img src="./img/sk.svg" alt="icon"></a>
+                                <a href="" target="_blank"><img src="./img/fb.svg" alt="icon"></a>
+                                <a href="" target="_blank"><img src="./img/vk.svg" alt="icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="patty">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header-slider" style="background-image: url(./img/blog-page-head.png);">
+        <div class="wrapper only-title">
+            <div class="header-slider__title">
+                <h1>Блог</h1>
+            </div>
+        </div>
+    </div>
+    <main class="site-main">
+        <div class="wrapper">
+            <p id="breadcrumbs">
+                <span>
+                    <span>
+                        <a href="s/">Главная</a> 
+                        | 
+                        <span class="breadcrumb_last" aria-current="page">
+                            О нас
+                        </span>
+                    </span>
+                </span>
+            </p>
+        </div>
+        <div class="blog">
+            <div class="wrapper">
+                <h2 style="text-align: center;">Блог</h2>
+                <div class="container">
+                    <div class="item">
+                        <a href="/"></a>
+                        <div class="title">Статья 1</div>
+                        <img src="./img/top-point.svg" alt="img">
+                        <div class="image-block"></div>
+                        <div class="post-link-btn">перейти</div>
+                    </div>
+                    <div class="item">
+                        <a href="/"></a>
+                        <div class="title">Статья 2</div>
+                        <img src="./img/top-point.svg" alt="img">
+                        <div class="image-block"></div>
+                        <div class="post-link-btn">перейти</div>
+                    </div>
+                    <div class="item">
+                        <a href="/"></a>
+                        <div class="title">Статья 3</div>
+                        <img src="./img/top-point.svg" alt="img">
+                        <div class="image-block"></div>
+                        <div class="post-link-btn">перейти</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="consultation-button solut-btn">Заказать консультацию</div>
+        <div class="subscribe-block lazyBg">
+            <div class="wrapper">
+                <div class="title">Хотите получать новости?</div>
+                <div class="desc">Подпишитесь на нашу рассылку</div>
+                <div class="subscribe-adv">
+                    <div class="item">
+                        мы присылаем только самое важное
+                    </div>
+                    <div class="item">
+                        мы не передаём ваши данные третьим лицам
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="./img/letters.svg" alt="img">
+                    <div class="subscribe-form">
+                        <div class="item"><span>Имя:</span><input type="text"></div>
+                        <div class="item"><span>E-mail:</span><input type="text"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="feedback">
+        <div class="wrapper">
+            <h2 class=" mt0">Обратная связь</h2>
+            <div role="form" class="wpcf7" id="wpcf7-f6-o1" lang="ru-RU" dir="ltr">
+                <div class="screen-reader-response" role="alert" aria-live="polite"></div>
+                <form action="/blog/#wpcf7-f6-o1" method="post" class="wpcf7-form init" novalidate="novalidate">
+                <div style="display: none;">
+                <input type="hidden" name="_wpcf7" value="6">
+                <input type="hidden" name="_wpcf7_version" value="5.2.1">
+                <input type="hidden" name="_wpcf7_locale" value="ru_RU">
+                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f6-o1">
+                <input type="hidden" name="_wpcf7_container_post" value="0">
+                <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                </div>
+                <label>Ваше имя
+                    <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span> </label>
+                
+                <label>Ваш e-mail
+                    <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"></span> </label>
+                
+                <label>Ваш номер телефона
+                    <span class="wpcf7-form-control-wrap your-phone"><input type="tel" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false"></span> </label>
+                
+                <label>Опишите проблему или задайте вопрос
+                    <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </label>
+                
+                <label>Свяжемся с вами в течение 30 мин
+                    <input type="submit" value="Заказать консультацию" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span> </label><div class="wpcf7-response-output" role="alert" aria-hidden="true"></div></form></div>
+                <div class="privacy">
+                    Нажимая на кнопку, Вы даете согласие на сбор, хранение и обработку персональных данных и соглашаетесь c Политикой конфиденциальности
+                </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="wrapper">
+            <div class="container">
+                <div class="address">
+                    <div class="city">г. Москва, </div>
+                    <div class="street">ул. 3-я Мытищинская </div>
+                    <div class="office">д.16, стр.60, офис 802</div>
+                    <div class="phone">+7(499) 674-72-45</div>
+                    <div class="email">support@ksit.ru</div>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="about.html">О нас</a></li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Услуги</a>
+                                <ul class="sub-menu">
+                                    <li><a href="service1.html">Построение и настройка IT-инфраструктуры</a></li>
+                                    <li><a href="service2.html">Абонентское обслуживание</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="ready-solutions.html">Готовые решения</a></li>
+                            <li><a href="blog.html">Блог</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="social-block">
+                    <div class="email-text">E-mail</div>
+                    <div class="yellow-input"><input type="text"></div>
+                    <div class="yellow-submit">Подписаться</div>
+                    <div class="subscribe-text">Подпишитесь на новости «КСиТ», чтобы первым узнать о выгодных предложениях.</div>
+                    <div class="social">
+                        <a href="" target="_blank"><img src="./img/wa.svg" alt="icon"></a>
+                        <a href="" target="_blank"><img src="./img/in.svg" alt="icon"></a>
+                        <a href="" target="_blank"><img src="./img/sk.svg" alt="icon"></a>
+                        <a href="" target="_blank"><img src="./img/fb.svg" alt="icon"></a>
+                        <a href="" target="_blank"><img src="./img/vk.svg" alt="icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copy"></div>
+    <div id="popup-form" class="white-popup mfp-hide">
+        <div role="form" class="wpcf7" id="f6-o1" lang="ru-RU" dir="ltr">
+            
+                <span class="wpcf7-form-control-wrap your-email">
+                    <input type="email" placeholder="e-mail" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false">
+                </span>
+            
+                <span class="wpcf7-form-control-wrap your-phone">
+                    <input type="tel" placeholder="тел." name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false">
+                </span>
+
+                <label>Вопрос:
+                    <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> 
+                </label>
+            
+                <input type="submit" value="отправить" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span><div class="wpcf7-response-output" role="alert" aria-hidden="true"></div></form></div>
+    </div>
+    <script type='text/javascript' src='./js/app.js'></script>
+</body>
+</html>

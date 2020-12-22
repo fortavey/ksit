@@ -3,6 +3,16 @@
     @media screen and (max-width: 600px) {
         margin-bottom: 60px;
     }
+    &.reviews-page {
+        margin-bottom: 100px;
+    }
+    .ava {
+        width: 209px;
+        height: 209px;
+        border-radius: 105px;
+        background: #C4C4C4;
+        margin: 10px auto 20px;
+    }
     h2 {
         font-size: 72px;
         line-height: 86px;
@@ -75,6 +85,16 @@
                         transform: rotate(45deg);
                         transition: all 0.5s;
                     }
+                    &.read-more-btn {
+                        height: 98px;
+                        background: #FFB800;
+                        font-size: 24px;
+                        line-height: 35px;
+                        color: #0B4275;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
                 }
                 &.opened {
                     max-height: 2000px;
@@ -86,6 +106,10 @@
                     .open {
                         .arrow {
                             transform: rotate(-135deg);
+                        }
+                        &.read-more-btn {
+                            position: relative;
+                            bottom: -20px;
                         }
                     }
                 }

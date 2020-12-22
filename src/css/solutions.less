@@ -1,0 +1,59 @@
+.solutions {
+    h2 {
+        font-size: 64px;
+        line-height: 64px;        
+        text-align: center;
+        color: #0B4275;
+        font-weight: normal;
+        @media screen and (max-width: 800px) {
+            font-size: 40px;
+            line-height: 45px;
+        }
+    }
+    .container {
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .item {
+            background: rgb(106,140,171);
+            background: linear-gradient(0deg, rgba(106,140,171,1) 0%, rgba(191,205,219,1) 100%);
+            padding: 2px;
+            margin-bottom: 6px;
+            .inner {
+                width: 100%;
+                height: 163px;
+                background-color: #fff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                @media screen and (max-width: 800px) {
+                    height: auto;
+                    min-height: 100px;
+                }
+                .title {
+                    font-size: 34px;
+                    line-height: 36px;
+                    color: #0B4275;
+                    padding-left: 95px;
+                    max-width: 650px;
+                    @media screen and (max-width: 800px) {
+                        font-size: 22px;
+                        line-height: 25px;
+                        padding-left: 25px;
+                        padding-right: 20px;
+                    }
+                }
+                img {
+                    max-height: 100%;
+                    @media screen and (max-width: 800px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.consultation-button.solut-btn {
+    margin-bottom: 66px;
+}

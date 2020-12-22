@@ -22,7 +22,13 @@
                     <div class="menu-and-contacts">
                         <nav>
                             <ul>
-                                <li><a href="about.html">О нас</a></li>
+                                <li class="menu-item-has-children">
+                                    <a href="about.html">О нас</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="reviews.html">Отзывы</a></li>
+                                        <li><a href="contacts.html">Контакты</a></li>
+                                    </ul>
+                                </li>
                                 <li class="menu-item-has-children">
                                     <a href="#">Услуги</a>
                                     <ul class="sub-menu">
@@ -393,6 +399,23 @@
         </div>
     </footer>
     <div class="copy"></div>
+    <div id="popup-form" class="white-popup mfp-hide">
+        <div role="form" class="wpcf7" id="f6-o1" lang="ru-RU" dir="ltr">
+            
+                <span class="wpcf7-form-control-wrap your-email">
+                    <input type="email" placeholder="e-mail" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false">
+                </span>
+            
+                <span class="wpcf7-form-control-wrap your-phone">
+                    <input type="tel" placeholder="тел." name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false">
+                </span>
+
+                <label>Вопрос:
+                    <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> 
+                </label>
+            
+                <input type="submit" value="отправить" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span><div class="wpcf7-response-output" role="alert" aria-hidden="true"></div></form></div>
+    </div>
     <script type='text/javascript' src='./js/app.js'></script>
 </body>
 </html>

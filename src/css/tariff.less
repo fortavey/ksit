@@ -1,0 +1,118 @@
+.tariff {
+    background-color: #003665;
+    color: #FFB800;
+    margin-top: 94px;
+    padding-top: 75px;
+    h2 {
+        color: #FFB800 !important;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 70px;
+        line-height: 77px;
+        text-align: center;
+        font-weight: normal;
+        @media screen and (max-width: 900px) {
+            font-size: 40px;
+            line-height: 45px;
+        }
+    }
+    .table-wrap {
+        background-color: #003665;
+        padding-top: 66px;
+        padding-bottom: 77px;
+        @media screen and (max-width: 600px) {
+            overflow-x: scroll;
+        }
+        .yellow-cost {
+            font-size: 48px;
+            line-height: 71px;
+            text-align: center;
+            color: #0B4275;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 88px;
+            background: #FFB800;
+            margin-top: 47px;
+            margin-bottom: 35px;
+        }
+        .table-desc {
+            font-size: 24px;
+            line-height: 35px;
+            color: #FFFFFF;
+            padding-left: 67px;
+            margin-bottom: 63px;          
+        }
+    }
+    table {
+        color: #fff;
+        thead {
+            tr {
+                td {
+                    font-size: 48px;
+                    line-height: 71px;
+                    font-weight: 700;
+                    text-decoration: underline;
+                    padding-bottom: 41px;
+                    @media screen and (max-width: 900px) {
+                        font-size: 25px;
+                        line-height: 27px;
+                    }
+                    &:last-child {
+                        color: #FFB800;
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    border-bottom: 1px solid #FFFFFF;
+                    font-size: 32px;
+                    line-height: 47px;
+                    padding-bottom: 12px;
+                    padding-left: 25px;
+                    @media screen and (max-width: 900px) {
+                        font-size: 20px;
+                        line-height: 25px;
+                    }
+                    &:first-child {
+                        color: #FFB800;
+                    }
+                    &:last-child {
+                        color: #FFB800;
+                    }
+                }
+                &:last-child {
+                    td {
+                        border: none;
+                    }
+                }
+            }
+        }
+        &.lightblue {
+            margin-top: 40px;
+            margin-bottom: 45px;
+            tbody {
+                tr {
+                    td {
+                        font-size: 36px;
+                        line-height: 53px;
+                        text-align: center;
+                        @media screen and (max-width: 900px) {
+                            font-size: 20px;
+                            line-height: 25px;
+                        }
+                        &:first-child {
+                            color: #9FEDEB;
+                        }
+                        &:last-child {
+                            color: #9FEDEB;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
