@@ -28,8 +28,26 @@
             height: 255px;
             background-color: #003665;
             margin-bottom: 16px;
+            @media screen and (max-width: 600px) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: auto;
+                padding: 10px;
+            }
+            @media screen and (max-width: 500px) {
+                max-width: 100%;
+            }
             &:nth-child(even) {
                 text-align: right;
+                @media screen and (max-width: 600px) {
+                    .block-item__title {
+                        padding-right: 0;
+                    }
+                    img {
+                        margin-right: 0;
+                    }
+                }
                 .block-item__title {
                     padding-right: 37px;
                 }
@@ -39,6 +57,14 @@
             }
             &:nth-child(odd) {
                 text-align: left;
+                @media screen and (max-width: 600px) {
+                    .block-item__title {
+                        padding-left: 0;
+                    }
+                    img {
+                        margin-left: 0;
+                    }
+                }
                 .block-item__title {
                     padding-left: 37px;
                 }
@@ -51,11 +77,17 @@
                 line-height: 35px;
                 color: #FFB800;
                 padding-top: 20px;
+                @media screen and (max-width: 600px) {
+                    padding-top: 0;
+                }
             }
             img {
                 display: inline-block;
                 margin-top: 48px;
                 max-width: 100px;
+                @media screen and (max-width: 600px) {
+                    margin-top: 0;
+                }
             }
         }
         .block-item-absolute {

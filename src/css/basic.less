@@ -1,3 +1,7 @@
+.wp-block {
+    width: auto;
+    max-width: 1126px;
+}
 .wrapper {
     .wrapper();
 }
@@ -11,6 +15,13 @@ body {
     }
     &.menu-opened {
         overflow: hidden;
+    }
+}
+.social {
+    display: flex;
+    img {
+        width: 40px;
+        height: 40px;
     }
 }
 input, textarea {
@@ -73,7 +84,7 @@ input, textarea {
     height: 60px;
     background: #FFB800;
     border-radius: 2px;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 53px;
     display: flex;
     align-items: center;
@@ -82,6 +93,7 @@ input, textarea {
     color: #0B4275;
     .margin(auto);
     clear: both;
+    cursor: pointer;
     @media screen and (max-width: 600px) {
         font-size: 23px;
         line-height: 25px;
@@ -97,9 +109,9 @@ input, textarea {
     position: relative;
     > div {
         top: -30px;
-        width: 40px;
-        height: 40px;
-        border: 11px solid #0B4275;
+        width: 30px;
+        height: 30px;
+        border: 6px solid #0B4275;
         border-left: none;
         border-bottom: none;
         transform: rotate(-135deg);
@@ -147,7 +159,7 @@ main.site-main {
     }
     h2 {
         font-weight: normal;
-        font-size: 64px;
+        font-size: 55px;
         line-height: 64px;
         color: #0B4275;
         @media screen and (max-width: 600px) {
@@ -164,8 +176,8 @@ main.site-main {
     p {
         margin-top: 10px;
         margin-bottom: 10px;
-        font-size: 36px;
-        line-height: 64px;
+        font-size: 24px;
+        line-height: 40px;
         color: #0B4275;
         @media screen and (max-width: 600px) {
             font-size: 18px !important;
@@ -175,11 +187,11 @@ main.site-main {
     ul {
         margin: 0;
         list-style: none;
-        font-size: 36px;
-        line-height: 53px;
+        font-size: 25px;
+        line-height: 35px;
         .margin(auto);
         @media screen and (max-width: 900px) {
-            font-size: 25px;
+            font-size: 22px;
             line-height: 30px;
         }
         @media screen and (max-width: 500px) {
@@ -203,10 +215,10 @@ main.site-main {
                 content: '';
                 display: block;
                 position: relative;
-                top: 20px;
-                width: 20px;
-                height: 20px;
-                border-radius: 10px;
+                top: 11px;
+                width: 16px;
+                height: 16px;
+                border-radius: 8px;
                 background: #E5231E;
                 margin-right: 10px;
                 flex-shrink: 0;

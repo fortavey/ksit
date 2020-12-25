@@ -88,7 +88,7 @@ function js(){
 				.pipe(gulpif(isDev, sourcemaps.init()))
 				.pipe(concat('app.js'))
 				.pipe(babel())
-				// .pipe(uglify())
+				.pipe(uglify())
 				.pipe(gulpif(isDev, sourcemaps.write()))
 			   	.pipe(gulp.dest('./build/js/'))
 			   	.pipe(gulpif(isSync, browserSync.stream()));
