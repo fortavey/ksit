@@ -140,3 +140,11 @@ try{
         window.addEventListener('scroll', addSrc);
     })();
 }catch(err){console.log(err);}
+
+// Lazy Image
+try{
+    (function(){
+        const img = new Image();
+        img.src = location.origin + '/wp-content/themes/ksit/img/form-popup.png';
+    })();
+}catch(err){console.log(err);}

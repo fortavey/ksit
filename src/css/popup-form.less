@@ -6,14 +6,17 @@
     max-width: 500px;
     margin: 20px auto;
 }
+.wpcf7-response-output {
+    color: white;
+}
 #popup-form {
     max-width: 1357px;
-    height: 579px;
+    min-height: 579px;
     background-image: url(./img/form-popup.png);
     background-size: cover;
     display: flex;
     justify-content: flex-end;
-    padding-top: 57px;
+    padding-top: 14px;
     padding-right: 73px;
     padding-left: 73px;
     @media screen and (max-width: 600px) {
@@ -30,7 +33,7 @@
             border-radius: 2px;
             outline: none;
             padding: 0;
-            margin: 0 0 43px;
+            margin: 43px 0 0 0;
             @media screen and (max-width: 600px) {
                 margin: 0 0 20px;
             }
@@ -61,6 +64,8 @@
             font-size: 28px;
             line-height: 31px;
             color: #FFFFFF;
+            margin-top: 43px;
+            display: block;
         }
     }
 }
